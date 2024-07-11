@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Login Authentication System</h1>
+        </header>
+        <main>
+            <!-- Registration Form -->
+            <section id="registerSection">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="regUsername">Username:</label>
+                    <input type="text" id="regUsername" name="regUsername" required>
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" name="regPassword" required>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+
+            <!-- Login Form -->
+            <section id="loginSection">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+
+            <!-- Secured Page -->
+            <section id="securedSection" style="display: none;">
+                <h2>Secured Page</h2>
+                <p>Welcome to the secured page, <span id="usernameDisplay"></span>!</p>
+                <button id="logoutButton">Logout</button>
+            </section>
+
+            <!-- Message Area -->
+            <div id="message"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Login Authentication System</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
